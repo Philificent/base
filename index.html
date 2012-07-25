@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>base</title>
+		<!-- meta tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+    <!-- Note: as of 2009, Google IGNORES meta name="keywords" and it may hurt your SEO score -->
+		<!-- Chrome frame to the rescue! -->
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<!-- CSS -->
+		<link href="css/base.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<!--
+					The #header generally contains a logo and a navigation section
+				
+					Note that if you opt for display:inline for your nav that you will
+					need to include some IE fixery for &lt; IE 8/9 to change it to a float.
+				-->
+				<div id="logo">base</div>
+				<div id="top-nav">
+					<ul class="nav">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+				</div>
+			</div>
+			<div id="content">
+				<div id="main">
+					<p>
+						base is a starting template for some of the sites that are commonly created.
+						This should help ramp up development time, as well as help standardize a work flow.
+					</p>
+					<p>
+						base is a mixture of many frameworks and coding practices. As they are finalized
+						credits will be placed in comments (generally in the CSS).
+					</p>
+					<br />
+					<b>In Progress:</b>
+					<ul>
+						<li>Adding a grid system</li>
+						<li>Adding some simple jQuery animation scripts</li>
+						<li>CSS3 (animations etc)</li>
+						<li>Pseudo elements in CSS (for clearfix and button styling)</li>
+					</ul>
+					<b>Fixes needed:</b>
+					<ul>
+						<li>Full testing</li>
+						<li>Font configuration</li>
+						<li>line heights</li>
+						<li>CSS Resets</li>
+					</ul>
+				</div>
+				<div id="sidebar"></div>
+			</div>
+			<div id="footer">
+				<p>The #footer generally contains a footer nav and copyright information</p>
+			</div>
+		</div>
+		<!-- JS -->
+		<script src="javascript/jquery-1.7.2.min.js"></script>
+		<!-- include respond.js so media queries work in IE6-8 -->
+		<script src="javascript/respond.min.js"></script>
+	</body>
+</html>

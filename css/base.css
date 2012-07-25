@@ -1,0 +1,40 @@
+/* Consider using a reset (320/HTML5 Boilerplate/Bootstrap) */
+p {margin: 0;}
+
+/* Clearfix works from ie8+ */
+.clearfix {*zoom: 1;}
+.clearfix:before, .clearfix:after {display: table;content: "";}
+.clearfix:after {clear: both;}
+
+body {padding: 0;margin: 0 auto;font-family: arial, helvetica, sans-serif;}
+#container {width: 100%;}
+
+	#header {min-height: 60px;padding: 0 2%;background: #444;color: #fff;position: relative;}
+		#logo {}
+		#top-nav {position: absolute;top: 0;right: 10px;}
+			.nav {display: none;}
+	#content {padding: 0 2%;margin: 10px 0;background: #fff;}
+
+	#footer {padding: 0 2%;min-height: 120px;font-size: 80%;border-top: 1px solid #000;}
+
+/***
+	Media Query times everything above should be built for 320
+	Make sure to implement a grid system to keep things aligned
+***/
+@media only screen and (min-width: 480px) {
+  /* 480 =================================================== */
+}
+@media only screen and (min-width: 768px) {
+  /* 768 =================================================== */
+}
+@media only screen and (min-width: 990px) {
+  /* 990 =================================================== */
+	.nav {display: block;}
+}
+@media only screen and (min-width: 1400px) {
+  /* 1400 =================================================== */ 
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* 2x =================================================== */
+	/*** use pixity instead of CSS to handle images for 'off' pixel density ***/
+}
