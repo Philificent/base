@@ -4,8 +4,9 @@
 		<title>base</title>
 		<!-- meta tags -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
 		<meta name="description" content="">
-    <!-- Note: as of 2009, Google IGNORES meta name="keywords" and it may hurt your SEO score -->
+		<!-- Note: as of 2009, Google IGNORES meta name="keywords" and it may hurt your SEO score... -->
 		<!-- Chrome frame to the rescue! -->
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
 		<!-- CSS -->
@@ -13,58 +14,77 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="header">
-				<!--
-					The #header generally contains a logo and a navigation section
-				
-					Note that if you opt for display:inline for your nav that you will
-					need to include some IE fixery for &lt; IE 8/9 to change it to a float.
-				-->
-				<div id="logo">base</div>
-				<div id="top-nav">
-					<ul class="nav">
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-					</ul>
-				</div>
-			</div>
-			<div id="content">
-				<div id="main">
+			<div id="header" class="col span_12">
+				<div class="row">
+					<h1>base</h1>
+				</div><!-- /.row -->
+			</div><!-- /#header -->
+			<div class="row clearfix">
+				<div id="main" class="col main">
 					<p>
 						base is a starting template for some of the sites that are commonly created.
 						This should help ramp up development time, as well as help standardize a work flow.
+						It has been put together from several ideas and frameworks (including bootstrap and
+						gridpak).
 					</p>
 					<p>
-						base is a mixture of many frameworks and coding practices. As they are finalized
-						credits will be placed in comments (generally in the CSS).
+						base has a grid system included which is based on a 12 column system with 2% padding
+						and 1.5% gutters. It also includes several break points for mobile and small screen
+						devices.
 					</p>
-					<br />
-					<b>In Progress:</b>
-					<ul>
-						<li>Adding a grid system</li>
-						<li>Adding some simple jQuery animation scripts</li>
-						<li>CSS3 (animations etc)</li>
-						<li>Pseudo elements in CSS (for clearfix and button styling)</li>
-					</ul>
-					<b>Fixes needed:</b>
-					<ul>
-						<li>Full testing</li>
-						<li>Font configuration</li>
-						<li>line heights</li>
-						<li>CSS Resets</li>
-					</ul>
-				</div>
-				<div id="sidebar"></div>
-			</div>
-			<div id="footer">
-				<p>The #footer generally contains a footer nav and copyright information</p>
-			</div>
-		</div>
+				</div><!-- /#main -->
+				<div id="sidebar" class="col sidebar">
+					<p>
+						The sidebar is a great place to keep navs, bugs, towers, and other items.
+					</p>
+				</div><!-- /#sidebar -->
+			</div><!-- /.row -->
+			<div class="row">
+					<div class="col cta">
+						<b>Media breakpoints:</b>
+						<ul>
+							<li>0-479 (tiny mobile)</li>
+							<li>480-959(mobile and tablet)</li>
+							<li>960-1399(large mobile and desktop)</li>
+							<li>1400+(widescreen)</li>
+						</ul>
+					</div>
+					<div class="col cta">
+						<b>In Progress:</b>
+						<ul>
+							<li>Adding some simple jQuery animation scripts</li>
+							<li>CSS3 (animations etc)</li>
+							<li>Pseudo elements in CSS (for clearfix and button styling)</li>
+						</ul>
+					</div>
+					<div class="col cta">
+						<b>Fixes needed:</b>
+						<ul>
+							<li>Full device and resolutiontesting</li>
+							<li>Font configuration (google/@fontface)</li>
+							<li>CSS Resets (may not include)</li>
+						</ul>
+					</div>
+				</div><!-- /.row -->
+			<div class="row">
+				<div id="footer" class="col span_12">
+					<p>The #footer generally contains a footer nav and copyright information</p>
+				</div><!-- /#footer -->
+			</div><!-- /.row -->
+		</div><!-- /#container -->
 		<!-- JS -->
 		<script src="javascript/jquery-1.7.2.min.js"></script>
 		<!-- include respond.js so media queries work in IE6-8 -->
 		<script src="javascript/respond.min.js"></script>
+		<![if lt IE 8]>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".clearfix").each(function(){
+					// change this from an append to a new sibling... it's killing the sidebar!
+					$(this).append('<div style="height: 0;line-height: 0;margin: 0;padding: 0;clear: both;">&nbsp;</div>');
+				});
+			});
+		</script>
+		<![endif]>
 	</body>
 </html>
