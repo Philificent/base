@@ -1,0 +1,382 @@
+@import "compass";
+
+/**
+ * Base column/grid generated from:
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+/** Mixins **/
+/* Note that soon this mixin will not be needed as Firefox and Chrome/Blink are dropping the need for prefixes! */
+$default-prefixes: webkit moz ms o;
+@mixin prefix-values($property, $value, $prefixes: $default-prefixes) {
+	@each $prefix in $prefixes {
+		-#{$prefix}-#{$property}: #{$value};
+	}
+	#{$property}: #{$value};
+}
+
+
+/** Variables **/
+
+/** Global styles **/
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+/* Consider using intrinsic ratio instead of the following for image scaling */
+img {max-width: 100%;vertical-align: bottom;height: auto;border: none;}
+
+/* Reusable column setup */
+
+@mixin col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+.col {
+   @include col;
+}
+
+@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
+    $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
+    width:($one_col * $num) + ($gutter_pc * ($num - 1));
+    border-left-width:$gutter_px;
+    padding:$padding;
+    margin-left:$gutter_pc;
+}
+
+@mixin span_first {
+    margin-left:0;
+}
+ 
+
+    /* 1. 12 Column Grid 0px - 479px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    6.5%
+    Span 2:    15.0%
+    Span 3:    23.5%
+    Span 4:    32.0%
+    Span 5:    40.5%
+    Span 6:    49.0%
+    Span 7:    57.5%
+    Span 8:    66.0%
+    Span 9:    74.5%
+    Span 10:    83.0%
+    Span 11:    91.5%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */	
+    
+	@media screen and (min-width: 0px) and (max-width: 479px) {
+        
+        .col {
+            margin-left:2%;
+            padding:0 1.5%;
+        }
+        
+        /* --- Gridpak variables ---*/ 
+        $max_columns: 12;
+        $padding: 0 1.5%;
+        $gutter_px: 0;
+        $gutter_pc: 2%;
+        
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+
+        .span_1 {
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_2 {
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_3 {
+            @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_4 {
+            @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_5 {
+            @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_6 {
+            @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_7 {
+            @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_8 {
+            @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_9 {
+            @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_10 {
+            @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_11 {
+            @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_12 {
+            @include span_first;
+            width:100%;
+        }
+
+		/** Styles for 0-479 (small) screens **/
+    }
+
+    /* 2. 12 Column Grid 480px - 959px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    6.5%
+    Span 2:    15.0%
+    Span 3:    23.5%
+    Span 4:    32.0%
+    Span 5:    40.5%
+    Span 6:    49.0%
+    Span 7:    57.5%
+    Span 8:    66.0%
+    Span 9:    74.5%
+    Span 10:    83.0%
+    Span 11:    91.5%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */	
+    
+	@media screen and (min-width: 480px) and (max-width: 959px) {
+        
+        .col {
+            margin-left:2%;
+            padding:0 1.5%;
+        }
+        
+        /* --- Gridpak variables ---*/ 
+        $max_columns: 12;
+        $padding: 0 1.5%;
+        $gutter_px: 0;
+        $gutter_pc: 2%;
+
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+        
+        .span_1 {
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_2 {
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_3 {
+            @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_4 {
+            @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_5 {
+            @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_6 {
+            @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_7 {
+            @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_8 {
+            @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_9 {
+            @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_10 {
+            @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_11 {
+            @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_12 {
+            @include span_first;
+            width:100%;
+        }
+
+		/** Styles for 480-959 (mid) screens **/
+    }
+
+    /* 3. 12 Column Grid 960px - 1399px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    6.5%
+    Span 2:    15.0%
+    Span 3:    23.5%
+    Span 4:    32.0%
+    Span 5:    40.5%
+    Span 6:    49.0%
+    Span 7:    57.5%
+    Span 8:    66.0%
+    Span 9:    74.5%
+    Span 10:    83.0%
+    Span 11:    91.5%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */	
+    
+	@media screen and (min-width: 960px) and (max-width: 1399px) {
+        
+        .col {
+            margin-left:2%;
+            padding:0 1.5%;
+        }
+        
+        /* --- Gridpak variables ---*/ 
+        $max_columns: 12;
+        $padding: 0 1.5%;
+        $gutter_px: 0;
+        $gutter_pc: 2%;
+
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+        
+        .span_1 {
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_2 {
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_3 {
+            @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_4 {
+            @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_5 {
+            @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_6 {
+            @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_7 {
+            @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_8 {
+            @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_9 {
+            @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_10 {
+            @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_11 {
+            @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_12 {
+            @include span_first;
+            width:100%;
+        }
+
+		/** Styles for 960-1399 (large) screens **/
+    }
+
+    /* 4. 12 Column Grid 1400px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    6.5%
+    Span 2:    15.0%
+    Span 3:    23.5%
+    Span 4:    32.0%
+    Span 5:    40.5%
+    Span 6:    49.0%
+    Span 7:    57.5%
+    Span 8:    66.0%
+    Span 9:    74.5%
+    Span 10:    83.0%
+    Span 11:    91.5%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */	
+    
+	@media screen and (min-width: 1400px) {
+        
+        .col {
+            margin-left:2%;
+            padding:0 1.5%;
+        }
+        
+        /* --- Gridpak variables ---*/ 
+        $max_columns: 12;
+        $padding: 0 1.5%;
+        $gutter_px: 0;
+        $gutter_pc: 2%;
+        
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+        
+        .span_1 {
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_2 {
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_3 {
+            @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_4 {
+            @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_5 {
+            @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_6 {
+            @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_7 {
+            @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_8 {
+            @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_9 {
+            @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_10 {
+            @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_11 {
+            @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_12 {
+            @include span_first;
+            width:100%;
+        }
+
+		/** Styles for 1400-infinity (xlarge) screens **/
+    }
+ 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* 2x =================================================== */
+	/** For images that you need to swap out based on screen-size vs density, look at the 'pixity core' project **/
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}

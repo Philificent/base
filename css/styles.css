@@ -1,0 +1,557 @@
+/**
+ * Base column/grid generated from:
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+/** Mixins **/
+/* Note that soon this mixin will not be needed as Firefox and Chrome/Blink are dropping the need for prefixes! */
+/** Variables **/
+/** Global styles **/
+/* line 25, scss/styles.scss */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+/* Consider using intrinsic ratio instead of the following for image scaling */
+/* line 30, scss/styles.scss */
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  height: auto;
+  border: none;
+}
+
+/* Reusable column setup */
+/* line 45, scss/styles.scss */
+.col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+
+/* 1. 12 Column Grid 0px - 479px 
+----------------------------------------------------------------------------- 
+
+Span 1:    6.5%
+Span 2:    15.0%
+Span 3:    23.5%
+Span 4:    32.0%
+Span 5:    40.5%
+Span 6:    49.0%
+Span 7:    57.5%
+Span 8:    66.0%
+Span 9:    74.5%
+Span 10:    83.0%
+Span 11:    91.5%
+Span 12:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  /* line 82, scss/styles.scss */
+  .col {
+    margin-left: 2%;
+    padding: 0 1.5%;
+  }
+
+  /* --- Gridpak variables ---*/
+  /* line 94, scss/styles.scss */
+  .row .col:first-child {
+    margin-left: 0;
+  }
+
+  /* line 98, scss/styles.scss */
+  .span_1 {
+    width: 6.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 101, scss/styles.scss */
+  .span_2 {
+    width: 15%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 104, scss/styles.scss */
+  .span_3 {
+    width: 23.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 107, scss/styles.scss */
+  .span_4 {
+    width: 32%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 110, scss/styles.scss */
+  .span_5 {
+    width: 40.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 113, scss/styles.scss */
+  .span_6 {
+    width: 49%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 116, scss/styles.scss */
+  .span_7 {
+    width: 57.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 119, scss/styles.scss */
+  .span_8 {
+    width: 66%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 122, scss/styles.scss */
+  .span_9 {
+    width: 74.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 125, scss/styles.scss */
+  .span_10 {
+    width: 83%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 128, scss/styles.scss */
+  .span_11 {
+    width: 91.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 131, scss/styles.scss */
+  .span_12 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /** Styles for 0-479 (small) screens **/
+}
+/* 2. 12 Column Grid 480px - 959px 
+----------------------------------------------------------------------------- 
+
+Span 1:    6.5%
+Span 2:    15.0%
+Span 3:    23.5%
+Span 4:    32.0%
+Span 5:    40.5%
+Span 6:    49.0%
+Span 7:    57.5%
+Span 8:    66.0%
+Span 9:    74.5%
+Span 10:    83.0%
+Span 11:    91.5%
+Span 12:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  /* line 159, scss/styles.scss */
+  .col {
+    margin-left: 2%;
+    padding: 0 1.5%;
+  }
+
+  /* --- Gridpak variables ---*/
+  /* line 171, scss/styles.scss */
+  .row .col:first-child {
+    margin-left: 0;
+  }
+
+  /* line 175, scss/styles.scss */
+  .span_1 {
+    width: 6.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 178, scss/styles.scss */
+  .span_2 {
+    width: 15%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 181, scss/styles.scss */
+  .span_3 {
+    width: 23.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 184, scss/styles.scss */
+  .span_4 {
+    width: 32%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 187, scss/styles.scss */
+  .span_5 {
+    width: 40.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 190, scss/styles.scss */
+  .span_6 {
+    width: 49%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 193, scss/styles.scss */
+  .span_7 {
+    width: 57.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 196, scss/styles.scss */
+  .span_8 {
+    width: 66%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 199, scss/styles.scss */
+  .span_9 {
+    width: 74.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 202, scss/styles.scss */
+  .span_10 {
+    width: 83%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 205, scss/styles.scss */
+  .span_11 {
+    width: 91.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 208, scss/styles.scss */
+  .span_12 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /** Styles for 480-959 (mid) screens **/
+}
+/* 3. 12 Column Grid 960px - 1399px 
+----------------------------------------------------------------------------- 
+
+Span 1:    6.5%
+Span 2:    15.0%
+Span 3:    23.5%
+Span 4:    32.0%
+Span 5:    40.5%
+Span 6:    49.0%
+Span 7:    57.5%
+Span 8:    66.0%
+Span 9:    74.5%
+Span 10:    83.0%
+Span 11:    91.5%
+Span 12:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 960px) and (max-width: 1399px) {
+  /* line 236, scss/styles.scss */
+  .col {
+    margin-left: 2%;
+    padding: 0 1.5%;
+  }
+
+  /* --- Gridpak variables ---*/
+  /* line 248, scss/styles.scss */
+  .row .col:first-child {
+    margin-left: 0;
+  }
+
+  /* line 252, scss/styles.scss */
+  .span_1 {
+    width: 6.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 255, scss/styles.scss */
+  .span_2 {
+    width: 15%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 258, scss/styles.scss */
+  .span_3 {
+    width: 23.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 261, scss/styles.scss */
+  .span_4 {
+    width: 32%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 264, scss/styles.scss */
+  .span_5 {
+    width: 40.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 267, scss/styles.scss */
+  .span_6 {
+    width: 49%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 270, scss/styles.scss */
+  .span_7 {
+    width: 57.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 273, scss/styles.scss */
+  .span_8 {
+    width: 66%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 276, scss/styles.scss */
+  .span_9 {
+    width: 74.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 279, scss/styles.scss */
+  .span_10 {
+    width: 83%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 282, scss/styles.scss */
+  .span_11 {
+    width: 91.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 285, scss/styles.scss */
+  .span_12 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /** Styles for 960-1399 (large) screens **/
+}
+/* 4. 12 Column Grid 1400px - Infinity 
+----------------------------------------------------------------------------- 
+
+Span 1:    6.5%
+Span 2:    15.0%
+Span 3:    23.5%
+Span 4:    32.0%
+Span 5:    40.5%
+Span 6:    49.0%
+Span 7:    57.5%
+Span 8:    66.0%
+Span 9:    74.5%
+Span 10:    83.0%
+Span 11:    91.5%
+Span 12:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 1400px) {
+  /* line 313, scss/styles.scss */
+  .col {
+    margin-left: 2%;
+    padding: 0 1.5%;
+  }
+
+  /* --- Gridpak variables ---*/
+  /* line 325, scss/styles.scss */
+  .row .col:first-child {
+    margin-left: 0;
+  }
+
+  /* line 329, scss/styles.scss */
+  .span_1 {
+    width: 6.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 332, scss/styles.scss */
+  .span_2 {
+    width: 15%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 335, scss/styles.scss */
+  .span_3 {
+    width: 23.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 338, scss/styles.scss */
+  .span_4 {
+    width: 32%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 341, scss/styles.scss */
+  .span_5 {
+    width: 40.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 344, scss/styles.scss */
+  .span_6 {
+    width: 49%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 347, scss/styles.scss */
+  .span_7 {
+    width: 57.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 350, scss/styles.scss */
+  .span_8 {
+    width: 66%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 353, scss/styles.scss */
+  .span_9 {
+    width: 74.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 356, scss/styles.scss */
+  .span_10 {
+    width: 83%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 359, scss/styles.scss */
+  .span_11 {
+    width: 91.5%;
+    border-left-width: 0;
+    padding: 0 1.5%;
+    margin-left: 2%;
+  }
+
+  /* line 362, scss/styles.scss */
+  .span_12 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /** Styles for 1400-infinity (xlarge) screens **/
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* 2x =================================================== */
+  /** For images that you need to swap out based on screen-size vs density, look at the 'pixity core' project **/
+}
+/* line 375, scss/styles.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+
+/* line 380, scss/styles.scss */
+.clearfix:after {
+  clear: both;
+}

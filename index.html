@@ -7,10 +7,10 @@
 		<meta charset="UTF-8" />
 		<meta name="description" content="">
 		<!-- Note: as of 2009, Google IGNORES meta name="keywords" and it may hurt your SEO score... -->
-		<!-- Chrome frame to the rescue! -->
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<!-- IE should be using edge -->
+		<meta http-equiv="X-UA-Compatible" content="IE-edge" />
 		<!-- CSS -->
-		<link href="css/base.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 		<div id="container">
@@ -20,7 +20,7 @@
 				</div><!-- /.row -->
 			</div><!-- /#header -->
 			<div class="row clearfix">
-				<div id="main" class="col main">
+				<div id="main" class="col span_8">
 					<p>
 						base is a starting template for some of the sites that are commonly created.
 						This should help ramp up development time, as well as help standardize a work flow.
@@ -32,59 +32,55 @@
 						and 1.5% gutters. It also includes several break points for mobile and small screen
 						devices.
 					</p>
-				</div><!-- /#main -->
-				<div id="sidebar" class="col sidebar">
+				</div><!-- /.col .span_8 -->
+				<div id="sidebar" class="col span_4">
 					<p>
 						The sidebar is a great place to keep navs, bugs, towers, and other items.
 					</p>
-				</div><!-- /#sidebar -->
-			</div><!-- /.row -->
-			<div class="row">
-					<div class="col cta">
+				</div><!-- /.col .span_4 -->
+			</div><!-- /.row .clearfix -->
+			<div class="row clearfix">
+					<div class="col span_4">
 						<b>Media breakpoints:</b>
 						<ul>
-							<li>0-479 (tiny mobile)</li>
-							<li>480-959(mobile and tablet)</li>
-							<li>960-1399(large mobile and desktop)</li>
-							<li>1400+(widescreen)</li>
+							<li>0-479 (Small)</li>
+							<li>480-959(Medium)</li>
+							<li>960-1399(Large)</li>
+							<li>1400+(XLarge)</li>
 						</ul>
 					</div>
-					<div class="col cta">
+					<div class="col span_4">
 						<b>In Progress:</b>
 						<ul>
-							<li>Adding some simple jQuery animation scripts</li>
-							<li>CSS3 (animations etc)</li>
-							<li>Pseudo elements in CSS (for clearfix and button styling)</li>
+							<li>Updates are browsers increase support</li>
 						</ul>
 					</div>
-					<div class="col cta">
-						<b>Fixes needed:</b>
+					<div class="col span_4">
+						<b>Fixes/Todo:</b>
 						<ul>
-							<li>Full device and resolutiontesting</li>
-							<li>Font configuration (google/@fontface)</li>
-							<li>CSS Resets (may not include)</li>
+							<li>Nothing is currently planned...</li>
 						</ul>
 					</div>
-				</div><!-- /.row -->
-			<div class="row">
+				</div><!-- /.row .clearfix -->
+			<div class="row clearfix">
 				<div id="footer" class="col span_12">
 					<p>The #footer generally contains a footer nav and copyright information</p>
 				</div><!-- /#footer -->
-			</div><!-- /.row -->
+			</div><!-- /.row .clearfix-->
 		</div><!-- /#container -->
 		<!-- JS -->
-		<script src="javascript/jquery-1.7.2.min.js"></script>
-		<!-- include respond.js so media queries work in IE6-8 -->
-		<script src="javascript/respond.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+		
 		<![if lt IE 8]>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".clearfix").each(function(){
-					// change this from an append to a new sibling... it's killing the sidebar!
-					$(this).append('<div style="height: 0;line-height: 0;margin: 0;padding: 0;clear: both;">&nbsp;</div>');
+			<!-- include respond.js so media queries work in IE6-8 -->
+			<script src="javascript/respond.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$(".clearfix").each(function(){
+						$(this).append('<div style="height: 0;line-height: 0;margin: 0;padding: 0;clear: both;">&nbsp;</div>');
+					});
 				});
-			});
-		</script>
+			</script>
 		<![endif]>
 	</body>
 </html>
